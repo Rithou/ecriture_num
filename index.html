@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Écriture Numérique</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            color: #3b3b30;
+            overflow: auto; /* Permet le défilement */
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://img.freepik.com/premium-photo/top-view-modern-blue-office-desktop-with-blank-notepad_73872-630.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            filter: blur(5px);
+            z-index: -1; /* Place l'image de fond derrière le contenu */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent pour améliorer la lisibilité du texte */
+            border-radius: 10px;
+            margin: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 55px;
+            text-align: center;
+            font-weight: bold;
+            color: #dfe2e4;
+            text-decoration: underline;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .p1 {
+            text-align: center;
+            font-size: 30px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            border-top: 3px solid #080e0d; /* Augmentez la valeur de 3px à la valeur souhaitée */
+            margin: 20px 0;
+        }
+
+        .blinking-image {
+            animation: blink 4s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .intro, .conclusion {
+            transition: transform 0.3s ease; /* Ajoute une transition pour l'effet de survol */
+        }
+
+        .intro:hover, .conclusion:hover {
+            transform: scale(1.05); /* Agrandit légèrement la section au survol */
+        }
+
+        
+
+        button {
+            background-color: #3498db; /* Couleur de fond */
+            color: white; /* Couleur du texte */
+            border: none; /* Pas de bordure */
+            padding: 15px 30px; /* Espace intérieur */
+            font-size: 16px; /* Taille de la police */
+            font-weight: bold; /* Texte en gras */
+            border-radius: 5px; /* Coins arrondis */
+            cursor: pointer; /* Curseur en forme de main */
+            transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+            margin: 15px auto;
+            display: block;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Couleur de fond au survol */
+        }
+
+        button:active {
+            background-color: #1f6f9b; /* Couleur de fond lors du clic */
+            box-shadow: 0 5px black; /* Ombre pour l'effet de clic */
+            transform: translateY(4px); /* Déplacement vers le bas pour l'effet de clic */
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1>L'évolution de l'écriture au numérique</h1>
+        <img src="meta.jpg" alt="Écriture numérique" width="1200" class="blinking-image">
+        <p><strong>Légende :</strong> "L'écriture numérique"</p>
+        <p><strong>Crédit :</strong> meta AI (Version 23 juillet 2024)</p>
+    </div>
+    <div class="section intro">
+        <h2 class="p1">INTRODUCTION</h2>
+        <p>Les technologies numériques ont changé la façon dont nous écrivons et partageons des textes. Aujourd'hui, il est plus simple de créer et diffuser des contenus. Cela rend aussi l'écriture plus interactive. Mais ce changement vient aussi avec des problèmes, surtout sur la qualité et l'éthique.</p>
+    </div>
+    <div class="section">
+        <h3 class="p1">Accessibilité</h3>
+        <p>Les technologies numériques rendent l'écriture accessible à beaucoup de monde. Avec des plateformes comme les blogs et les réseaux sociaux, tout le monde peut partager ses idées. Par exemple, des sites comme Medium et WordPress permettent à des millions de personnes de publier sans compétences techniques. Selon l'analyse WordPress de la base d'utilisateurs existante, les sites WordPress attirent actuellement environ 409 millions de visiteurs uniques chaque mois et 20 milliards de pages vues par mois. Cette accessibilité donne une voix à plein de personnes et enrichit notre culture. Mais cela pose aussi des défis pour maintenir la qualité et vérifier les informations. Beaucoup de contenus non vérifiés peuvent créer de la désinformation.</p>
+    </div>
+    <div class="section">
+        <h3 class="p1">Interactivité</h3>
+        <p>Par ailleurs, l'écriture numérique permet plus d'interaction car les lecteurs peuvent commenter, partager et échanger avec le contenu. En effet, selon ‘Laporte, G. (1995)’ : « Dans tout programme multimédia, le point le plus fort et qui suscite le plus d’intérêt est l’interactivité car l’usager participe à l’histoire et fait partie de celle-ci ». Par exemple, de nombreux articles en ligne ont une section où les lecteurs peuvent donner leur avis et engager des discussions. Des sites comme Reddit montrent à quel point l’interactivité est importante. L’interaction peut rendre la lecture plus enrichissante grâce à l'échange d'idées. Toutefois, cela peut aussi mener à des discussions houleuses et à la diffusion de contenus non vérifiés.</p>
+    </div>
+    <div class="section conclusion">
+        <h2 class="p1">CONCLUSION</h2>
+        <p>L'écriture numérique a bouleversé la création et la diffusion des contenus, rendant tout cela plus accessible et interactif. Mais cela pose aussi des défis en termes d'éthique et de qualité. Les effets de ces changements nécessitent une vigilance constante pour un espace d'information sain.</p>
+    </div>
+    <div class="section">
+        <hr>
+        <h2 class="p1">Bibliographie</h2>
+        <ul>
+            <li><a href="https://walili.ca/blogue/les-principales-statistiques-wordpress-que-vous-devriez-connaitre-en-2024/">WordPress. (2024). WordPress.com Stats.</a></li>
+            <li><a href="https://www.erudit.org/fr/revues/sequences/1995-n177-sequences1141457/49685ac/">Laporte, G. (1995). Le multimédia interactif : un scénario commence à prendre forme. Séquences, (177), 9–9.</a></li>
+            <li><a href="https://www.reddit.com/?rdt=55374">Reddit</a></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Écriture Numérique. Tous droits réservés.</p>
+        <button><a href="https://th.bing.com/th/id/OIP.9Lflebv0He2cSjP4iqgiGwAAAA?w=143&h=150&c=7&r=0&o=5&dpr=1.5&pid=1.7">Cliquez-moi</a></button>
+    </footer>
+</body>
+</html>
